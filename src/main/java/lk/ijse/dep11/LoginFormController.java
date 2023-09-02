@@ -35,7 +35,7 @@ public class LoginFormController {
             Scene MainScene = new Scene(Mainroot);
             Stage stage = new Stage();
             stage.setScene(MainScene);
-            stage.setTitle("Smart Banking");
+            stage.setTitle("CODEBank - Smart Banking");
             stage.centerOnScreen();
             stage.setResizable(false);
             stage.show();

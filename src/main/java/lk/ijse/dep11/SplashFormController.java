@@ -36,7 +36,7 @@ public class SplashFormController {
 
                 Stage stage = new Stage();
                 stage.setScene(MainScene);
-                stage.setTitle("Untitled");
+                stage.setTitle("CODEBank");
                 stage.show();
                 stage.centerOnScreen();
                 lblSplash.getScene().getWindow().hide();

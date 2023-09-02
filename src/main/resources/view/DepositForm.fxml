@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.dep11.DepositFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane fx:id="root" prefHeight="315.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.DepositFormController">
+   <children>
+      <Label layoutX="158.0" layoutY="38.0" text="Deposit...">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="103.0" text="Account No :" />
+      <ComboBox fx:id="cmbAccount" layoutX="179.0" layoutY="99.0" prefHeight="24.0" prefWidth="171.0" />
+      <Label layoutX="107.0" layoutY="143.0" text="Balance :" />
+      <Label fx:id="lblBalance" layoutX="200.0" layoutY="143.0" />
+      <Label layoutX="41.0" layoutY="182.0" text="Deposit ammount :" />
+      <TextField fx:id="txtAmmount" layoutX="179.0" layoutY="178.0" promptText="ammount" />
+      <Button fx:id="btnDeposit" layoutX="219.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnDepositOnAction" text="Deposit" />
+      <Button fx:id="btnback" layoutX="305.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnbackOnAction" text="Back" />
+   </children>
 </AnchorPane>

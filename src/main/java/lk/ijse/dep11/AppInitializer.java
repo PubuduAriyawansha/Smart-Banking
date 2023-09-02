@@ -20,15 +20,15 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-        AnchorPane root = FXMLLoader.load(getClass().getResource("/view/SplashForm.fxml"));
+        AnchorPane root = FXMLLoader.load(getClass().getResource("/view/MainForm.fxml"));
         Scene Splash = new Scene(root);
 
         primaryStage.setScene(Splash);
         primaryStage.setTitle("Undecorated Windows");
 
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
-        root.setBackground(Background.fill(Color.TRANSPARENT));
-        Splash.setFill(Color.TRANSPARENT);
+//        primaryStage.initStyle(StageStyle.TRANSPARENT);
+//        root.setBackground(Background.fill(Color.TRANSPARENT));
+//        Splash.setFill(Color.TRANSPARENT);
 
         primaryStage.show();
         primaryStage.centerOnScreen();

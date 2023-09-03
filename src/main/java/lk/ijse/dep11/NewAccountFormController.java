@@ -54,6 +54,7 @@ public class NewAccountFormController {
             return;
 
         }
+        ammount=String.format("%.2f",Double.parseDouble(txtAmmount.getText()));
         Customer newCustomer = new Customer(id,name,ammount);
         temp.add(newCustomer);
         new Alert(Alert.AlertType.INFORMATION,"Customer Successfully Added").show();

@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="root" prefHeight="315.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.DepositFormController">
    <children>
       <Label layoutX="158.0" layoutY="38.0" text="Deposit...">
@@ -17,11 +16,13 @@
       </Label>
       <Label layoutX="85.0" layoutY="103.0" text="Account No :" />
       <ComboBox fx:id="cmbAccount" layoutX="179.0" layoutY="99.0" prefHeight="24.0" prefWidth="171.0" />
-      <Label layoutX="107.0" layoutY="143.0" text="Balance :" />
-      <Label fx:id="lblBalance" layoutX="200.0" layoutY="143.0" />
-      <Label layoutX="41.0" layoutY="182.0" text="Deposit ammount :" />
-      <TextField fx:id="txtAmmount" layoutX="179.0" layoutY="178.0" promptText="ammount" />
-      <Button fx:id="btnDeposit" layoutX="219.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnDepositOnAction" text="Deposit" />
-      <Button fx:id="btnback" layoutX="305.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnbackOnAction" text="Back" />
+      <Label layoutX="107.0" layoutY="179.0" text="Balance :" />
+      <Label fx:id="lblBalance" layoutX="182.0" layoutY="178.0" prefHeight="16.0" prefWidth="171.0" />
+      <Label layoutX="41.0" layoutY="221.0" text="Deposit ammount :" />
+      <TextField fx:id="txtAmmount" layoutX="179.0" layoutY="217.0" promptText="ammount" />
+      <Button fx:id="btnDeposit" defaultButton="true" layoutX="219.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnDepositOnAction" text="Deposit" />
+      <Button fx:id="btnback" layoutX="305.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnbackOnAction" text="Back" />
+      <Label layoutX="120.0" layoutY="145.0" text="Name :" />
+      <Label fx:id="lblName" layoutX="182.0" layoutY="146.0" prefHeight="16.0" prefWidth="171.0" />
    </children>
 </AnchorPane>

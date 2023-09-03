@@ -44,10 +44,36 @@ public class MainFormController {
         loginStage.close();
     }
 
-    public void btnDepositOnAction(ActionEvent actionEvent) {
+    public void btnDepositOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/DepositForm.fxml"));
+        AnchorPane MainSceneRoot = fxmlLoader.load();
+
+        DepositFormController controller = fxmlLoader.getController();
+        controller.initData(customers);
+
+        Scene MainScene = new Scene(MainSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(MainScene);
+        stage.setTitle("Navigatoin main");
+        stage.show();
+        Stage loginStage =(Stage)root.getScene().getWindow();
+        loginStage.close();
     }
 
-    public void btnWithdrawalOnAction(ActionEvent actionEvent) {
+    public void btnWithdrawalOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/WithdrawalForm.fxml"));
+        AnchorPane MainSceneRoot = fxmlLoader.load();
+
+        WithdrawalFormController controller = fxmlLoader.getController();
+        controller.initData(customers);
+
+        Scene MainScene = new Scene(MainSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(MainScene);
+        stage.setTitle("Navigatoin main");
+        stage.show();
+        Stage loginStage =(Stage)root.getScene().getWindow();
+        loginStage.close();
     }
 
     public void btnTransferOnAction(ActionEvent actionEvent) {

@@ -58,6 +58,8 @@ public class TransferFormController {
                             new Alert(Alert.AlertType.ERROR,"Same Account selected").show();
                             cmbAccountTo.getSelectionModel().clearSelection();
                             cmbAccountTo.requestFocus();
+                            lblToname.setText("");
+                            lblToBalance.setText("");
                             return;
                         }
                         lblToname.setText(temp.get(index1).getName());
@@ -152,4 +154,4 @@ public class TransferFormController {
         cmbAccountTo.setDisable(true);
 
     }
-} 
+}

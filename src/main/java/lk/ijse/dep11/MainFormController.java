@@ -88,7 +88,19 @@ public class MainFormController {
         loginStage.close();
     }
 
-    public void btnCheckBalanceOnAction(ActionEvent actionEvent) {
+    public void btnCheckBalanceOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/CheckBalanceForm.fxml"));
+        AnchorPane MainSceneRoot = fxmlLoader.load();
+
+        CheckBalanceFormCOntroller controller = fxmlLoader.getController();
+        controller.initData(customers);
+
+        Scene MainScene = new Scene(MainSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(MainScene);
+        stage.show();
+        Stage loginStage =(Stage)root.getScene().getWindow();
+        loginStage.close();
     }
 
     public void btnDeleteOnAction(ActionEvent actionEvent) {

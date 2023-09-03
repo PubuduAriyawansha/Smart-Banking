@@ -38,7 +38,6 @@ public class MainFormController {
         Scene MainScene = new Scene(MainSceneRoot);
         Stage stage = new Stage();
         stage.setScene(MainScene);
-        stage.setTitle("Navigatoin main");
         stage.show();
         Stage loginStage =(Stage)root.getScene().getWindow();
         loginStage.close();
@@ -54,7 +53,6 @@ public class MainFormController {
         Scene MainScene = new Scene(MainSceneRoot);
         Stage stage = new Stage();
         stage.setScene(MainScene);
-        stage.setTitle("Navigatoin main");
         stage.show();
         Stage loginStage =(Stage)root.getScene().getWindow();
         loginStage.close();
@@ -70,7 +68,6 @@ public class MainFormController {
         Scene MainScene = new Scene(MainSceneRoot);
         Stage stage = new Stage();
         stage.setScene(MainScene);
-        stage.setTitle("Navigatoin main");
         stage.show();
         Stage loginStage =(Stage)root.getScene().getWindow();
         loginStage.close();
@@ -86,9 +83,11 @@ public class MainFormController {
     }
 
     public void btnExitOnAction(ActionEvent actionEvent) {
+        System.exit(0);
     }
     public void initData(ArrayList<Customer>ar){
         customers=ar;
         System.out.println(customers.size());
     }
+
 }

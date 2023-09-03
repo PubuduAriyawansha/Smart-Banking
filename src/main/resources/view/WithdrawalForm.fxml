@@ -4,26 +4,32 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="root" prefHeight="324.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.WithdrawalFormController">
    <children>
-      <Label layoutX="153.0" layoutY="24.0" text="Withdrawal">
+      <Label layoutX="141.0" layoutY="23.0" text="Withdrawal" textFill="RED">
          <font>
-            <Font size="21.0" />
+            <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="34.0" layoutY="75.0" text="Account No :" />
-      <Label layoutX="72.0" layoutY="118.0" text="Name :" />
-      <Label layoutX="58.0" layoutY="154.0" text="Balance :" />
-      <Label layoutX="24.0" layoutY="213.0" text="Withdrawal Ammount" />
-      <ComboBox fx:id="cmbAccount" layoutX="138.0" layoutY="73.0" prefHeight="24.0" prefWidth="209.0" />
-      <Label fx:id="lblName" layoutX="138.0" layoutY="118.0" prefHeight="16.0" prefWidth="209.0" />
-      <Label fx:id="lblBalance" layoutX="138.0" layoutY="155.0" prefHeight="16.0" prefWidth="209.0" />
-      <TextField fx:id="txtWithdraw" layoutX="180.0" layoutY="209.0" prefHeight="24.0" prefWidth="209.0" />
+      <Label layoutX="34.0" layoutY="84.0" text="Account No :" />
+      <Label layoutX="72.0" layoutY="127.0" text="Name :" />
+      <Label layoutX="58.0" layoutY="163.0" text="Balance :" />
+      <Label layoutX="24.0" layoutY="222.0" text="Withdrawal Ammount" />
+      <ComboBox fx:id="cmbAccount" layoutX="138.0" layoutY="82.0" prefHeight="24.0" prefWidth="209.0" />
+      <Label fx:id="lblName" layoutX="138.0" layoutY="127.0" prefHeight="16.0" prefWidth="209.0" />
+      <Label fx:id="lblBalance" layoutX="138.0" layoutY="164.0" prefHeight="16.0" prefWidth="209.0" />
+      <TextField fx:id="txtWithdraw" layoutX="180.0" layoutY="218.0" prefHeight="24.0" prefWidth="209.0" />
       <Button fx:id="btnWithdraw" defaultButton="true" layoutX="250.0" layoutY="277.0" mnemonicParsing="false" onAction="#btnWithdrawOnAction" text="Withdraw" />
       <Button fx:id="btnback" layoutX="336.0" layoutY="277.0" mnemonicParsing="false" onAction="#btnbackOnAction" text="Back" />
+      <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="64.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/images/2.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

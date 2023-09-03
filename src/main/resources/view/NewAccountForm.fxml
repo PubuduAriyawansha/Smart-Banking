@@ -3,12 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane fx:id="root" prefHeight="286.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.NewAccountFormController">
    <children>
@@ -32,11 +33,16 @@
          </children>
       </GridPane>
       <Button fx:id="btnCreate" defaultButton="true" layoutX="315.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnCreateOnAction" text="create" />
-      <Label layoutX="145.0" layoutY="30.0" text="Create New Customer">
+      <Label layoutX="135.0" layoutY="35.0" text="Create New Customer" textFill="RED">
          <font>
-            <Font size="19.0" />
+            <Font name="System Bold Italic" size="21.0" />
          </font>
       </Label>
       <Button fx:id="btnback" layoutX="387.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnbackOnAction" text="Back" />
+      <ImageView fitHeight="59.0" fitWidth="60.0" layoutX="40.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/images/2.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

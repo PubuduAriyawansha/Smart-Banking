@@ -103,7 +103,19 @@ public class MainFormController {
         loginStage.close();
     }
 
-    public void btnDeleteOnAction(ActionEvent actionEvent) {
+    public void btnDeleteOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/DeleteAccountForm.fxml"));
+        AnchorPane MainSceneRoot = fxmlLoader.load();
+
+        DeleteAccountFormController controller = fxmlLoader.getController();
+        controller.initData(customers);
+
+        Scene MainScene = new Scene(MainSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(MainScene);
+        stage.show();
+        Stage loginStage =(Stage)root.getScene().getWindow();
+        loginStage.close();
     }
 
     public void btnExitOnAction(ActionEvent actionEvent) {

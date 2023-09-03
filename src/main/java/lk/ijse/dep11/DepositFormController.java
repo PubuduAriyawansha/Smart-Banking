@@ -82,7 +82,6 @@ public class DepositFormController {
         Scene MainScene = new Scene(MainSceneRoot);
         Stage stage = new Stage();
         stage.setScene(MainScene);
-        //stage.setTitle("Navigatoin main");
         stage.show();
         Stage loginStage = (Stage) root.getScene().getWindow();
         loginStage.close();

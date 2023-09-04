@@ -45,12 +45,10 @@ public class TransferFormController {
                 lblFrombalance.setText(temp.get(index).getAmmount());
                 cmbAccountTo.setDisable(false);
 
-
                 cmbAccountTo.getSelectionModel().selectedItemProperty().addListener(e1->{
                     if(cmbAccountTo.getSelectionModel().getSelectedItem()!=null){
 
                         txtTransfer.setDisable(false);
-
                         int index1 = cmbAccountTo.getItems().indexOf(cmbAccountTo.getSelectionModel().getSelectedItem());
                         this.indexTo=index1;
 
@@ -70,8 +68,6 @@ public class TransferFormController {
         });
 
     }
-
-
 
     public void btnBackOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/MainForm.fxml"));
@@ -152,6 +148,5 @@ public class TransferFormController {
         txtTransfer.setDisable(true);
         cmbAccountFrom.requestFocus();
         cmbAccountTo.setDisable(true);
-
     }
 }

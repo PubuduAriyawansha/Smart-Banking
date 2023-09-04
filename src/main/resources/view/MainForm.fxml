@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="335.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainFormController">
    <children>
       <ImageView fx:id="root" fitHeight="382.0" fitWidth="542.0" layoutX="-1.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
@@ -23,8 +22,8 @@
       </ImageView>
       <VBox layoutX="67.0" layoutY="77.0" prefHeight="268.0" prefWidth="416.0" spacing="15.0">
          <children>
-            <Button fx:id="btnNewAccount" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnNewAccountOnAction" style="-fx-background-radius: 10px;" text="Create new Account" />
-            <Button fx:id="btnDeposit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDepositOnAction" style="-fx-background-radius: 10px;" text="Deposit" />
+            <Button fx:id="btnNewAccount" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnNewAccountOnAction" style="-fx-background-radius: 10px; -fx-background-color: lightgray;" text="Create new Account" />
+            <Button fx:id="btnDeposit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDepositOnAction" style="-fx-background-radius: 10px; -fx-background-color: lightgray;" text="Deposit" />
             <Button fx:id="btnWithdrawal" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnWithdrawalOnAction" style="-fx-background-radius: 10px;" text="Withdrawal" />
             <Button fx:id="btnTransfer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnTransferOnAction" style="-fx-background-radius: 10px;" text="Transfer" />
             <Button fx:id="btnCheckBalance" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnCheckBalanceOnAction" style="-fx-background-radius: 10px;" text="Check Balance" />
@@ -32,9 +31,9 @@
             <Button fx:id="btnExit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnExitOnAction" style="-fx-background-radius: 10px;" text="Exit" />
          </children>
       </VBox>
-      <Label layoutX="206.0" layoutY="25.0" text="CODEBank" textFill="WHITE">
+      <Label layoutX="206.0" layoutY="25.0" text="CODEBank" textFill="#bf0a9e">
          <font>
-            <Font size="24.0" />
+            <Font name="System Bold" size="24.0" />
          </font>
       </Label>
    </children>

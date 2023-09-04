@@ -20,10 +20,10 @@
       <Label layoutX="72.0" layoutY="127.0" text="Name :" />
       <Label layoutX="58.0" layoutY="163.0" text="Balance :" />
       <Label layoutX="24.0" layoutY="222.0" text="Withdrawal Ammount" />
-      <ComboBox fx:id="cmbAccount" layoutX="138.0" layoutY="82.0" prefHeight="24.0" prefWidth="209.0" />
+      <ComboBox fx:id="cmbAccount" layoutX="138.0" layoutY="82.0" prefHeight="24.0" prefWidth="209.0" promptText="Account No" />
       <Label fx:id="lblName" layoutX="138.0" layoutY="127.0" prefHeight="16.0" prefWidth="209.0" />
       <Label fx:id="lblBalance" layoutX="138.0" layoutY="164.0" prefHeight="16.0" prefWidth="209.0" />
-      <TextField fx:id="txtWithdraw" layoutX="180.0" layoutY="218.0" prefHeight="24.0" prefWidth="209.0" />
+      <TextField fx:id="txtWithdraw" layoutX="180.0" layoutY="218.0" prefHeight="24.0" prefWidth="209.0" promptText="ammount" />
       <Button fx:id="btnWithdraw" defaultButton="true" layoutX="250.0" layoutY="277.0" mnemonicParsing="false" onAction="#btnWithdrawOnAction" text="Withdraw" />
       <Button fx:id="btnback" layoutX="336.0" layoutY="277.0" mnemonicParsing="false" onAction="#btnbackOnAction" text="Back" />
       <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="64.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">

@@ -18,7 +18,7 @@
       <Label layoutX="41.0" layoutY="79.0" text="Custoerm ID :" />
       <Label layoutX="83.0" layoutY="111.0" text="Name :" />
       <Label layoutX="68.0" layoutY="151.0" text="Balance :" />
-      <ComboBox fx:id="cmbCustomer" layoutX="156.0" layoutY="75.0" prefHeight="16.0" prefWidth="203.0" promptText="customer id" />
+      <ComboBox fx:id="cmbCustomer" layoutX="156.0" layoutY="75.0" prefHeight="16.0" prefWidth="203.0" promptText="Account No." />
       <Label fx:id="lblName" layoutX="148.0" layoutY="111.0" prefHeight="16.0" prefWidth="211.0" />
       <Label fx:id="lblBalance" layoutX="148.0" layoutY="151.0" prefHeight="16.0" prefWidth="211.0" />
       <Button fx:id="btnDelete" defaultButton="true" layoutX="234.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Delete" />

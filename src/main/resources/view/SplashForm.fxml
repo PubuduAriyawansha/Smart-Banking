@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="517.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.SplashFormController">
    <children>
       <ImageView fitHeight="323.0" fitWidth="328.0" layoutX="166.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="166.0" AnchorPane.topAnchor="63.0">
@@ -14,9 +13,9 @@
             <Image url="@../assert/images/2.png" />
          </image>
       </ImageView>
-      <Label layoutX="230.0" layoutY="14.0" text="CODEBank" textFill="WHITE">
+      <Label layoutX="221.0" layoutY="14.0" text="CODEBank" textFill="WHITE">
          <font>
-            <Font size="36.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
       </Label>
       <Label fx:id="lblSplash" alignment="CENTER" layoutX="310.0" layoutY="400.0" text="Label" textFill="WHITE" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="400.0" />

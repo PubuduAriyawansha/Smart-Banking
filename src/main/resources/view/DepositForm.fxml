@@ -17,7 +17,7 @@
          </font>
       </Label>
       <Label layoutX="85.0" layoutY="103.0" text="Account No :" />
-      <ComboBox fx:id="cmbAccount" layoutX="179.0" layoutY="99.0" prefHeight="24.0" prefWidth="171.0" promptText="customer id" />
+      <ComboBox fx:id="cmbAccount" layoutX="179.0" layoutY="99.0" prefHeight="24.0" prefWidth="171.0" promptText="Account No." />
       <Label layoutX="107.0" layoutY="179.0" text="Balance :" />
       <Label fx:id="lblBalance" layoutX="182.0" layoutY="178.0" prefHeight="16.0" prefWidth="171.0" />
       <Label layoutX="41.0" layoutY="221.0" text="Deposit ammount :" />

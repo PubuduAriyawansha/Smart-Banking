@@ -16,14 +16,14 @@
             <Font name="System Bold Italic" size="23.0" />
          </font>
       </Label>
-      <TableView fx:id="tblCustomers" layoutX="16.0" layoutY="91.0" prefHeight="225.0" prefWidth="378.0">
+      <TableView fx:id="tblCustomers" layoutX="17.0" layoutY="99.0" prefHeight="217.0" prefWidth="377.0">
         <columns>
           <TableColumn prefWidth="101.0" text="Account No" />
           <TableColumn prefWidth="118.0" text="Name" />
             <TableColumn prefWidth="158.0" text="Balance" />
         </columns>
       </TableView>
-      <Button fx:id="btnBack" layoutX="335.0" layoutY="329.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="Back" />
+      <Button fx:id="btnBack" defaultButton="true" layoutX="335.0" layoutY="329.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="Back" />
       <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="16.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/images/2.png" />
